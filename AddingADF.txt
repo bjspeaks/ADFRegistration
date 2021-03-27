@@ -1,0 +1,61 @@
+---------------------------------
+-- Step 1: Collect ADF Details
+---------------------------------
+{name: "ADFQA107",…}
+eTag: ""04001975-0000-0d00-0000-5ce828e50000""
+id: "/subscriptions/ba66f898-5c3d-473b-953e-fefd816b4264/resourceGroups/adfqa/providers/Microsoft.DataFactory/factories/adfqa107"
+identity: {type: "SystemAssigned", principalId: "18e6a4c3-f8dc-41e8-9626-709c5822657d",…}
+principalId: "18e6a4c3-f8dc-41e8-9626-709c5822657d"
+tenantId: "72f988bf-86f1-41af-91ab-2d7cd011db47"
+type: "SystemAssigned"
+location: "westeurope"
+name: "ADFQA107"
+properties: {provisioningState: "Succeeded", createTime: "2019-05-24T17:24:53.5604387Z", version: "2018-06-01",…}
+createTime: "2019-05-24T17:24:53.5604387Z"
+factoryStatistics: {totalResourceCount: 0, maxAllowedResourceCount: 0, factorySizeInGbUnits: 0,…}
+provisioningState: "Succeeded"
+version: "2018-06-01"
+tags: {}
+type: "Microsoft.DataFactory/factories"
+
+---------------------------------
+--step 2: Role Assignment
+---------------------------------
+{properties: {,…},…}
+id: "/subscriptions/ba66f898-5c3d-473b-953e-fefd816b4264/resourceGroups/BabylonDemo/providers/Microsoft.Purview/accounts/PurviewDemo-UK/providers/Microsoft.Authorization/roleAssignments/17d23e44-7ffc-4324-9872-b4b8db202ab1"
+name: "17d23e44-7ffc-4324-9872-b4b8db202ab1"
+properties: {,…}
+createdBy: null
+createdOn: "2021-03-27T07:41:24.2464196Z"
+principalId: "18e6a4c3-f8dc-41e8-9626-709c5822657d"
+principalType: "ServicePrincipal"
+roleDefinitionId: "/subscriptions/ba66f898-5c3d-473b-953e-fefd816b4264/providers/Microsoft.Authorization/roleDefinitions/8a3c2885-9b38-4fd2-9d99-91af537c1347"
+scope: "/subscriptions/ba66f898-5c3d-473b-953e-fefd816b4264/resourceGroups/BabylonDemo/providers/Microsoft.Purview/accounts/PurviewDemo-UK"
+updatedBy: "04a518f0-8c72-44d4-b5a5-2bd0549a98ae"
+updatedOn: "2021-03-27T07:41:24.4823505Z"
+type: "Microsoft.Authorization/roleAssignments"
+
+
+--------------------------------
+-- step 3: adding Purview to ADF
+--------------------------------
+{name: "ADFQA107",…}
+eTag: ""7a003458-0000-0d00-0000-605ee1a90000""
+id: "/subscriptions/ba66f898-5c3d-473b-953e-fefd816b4264/resourceGroups/adfqa/providers/Microsoft.DataFactory/factories/adfqa107"
+identity: {type: "SystemAssigned", principalId: "18e6a4c3-f8dc-41e8-9626-709c5822657d",…}
+principalId: "18e6a4c3-f8dc-41e8-9626-709c5822657d"
+tenantId: "72f988bf-86f1-41af-91ab-2d7cd011db47"
+type: "SystemAssigned"
+location: "westeurope"
+name: "ADFQA107"
+properties: {provisioningState: "Succeeded", createTime: "2019-05-24T17:24:53.5604387Z", version: "2018-06-01",…}
+createTime: "2019-05-24T17:24:53.5604387Z"
+provisioningState: "Succeeded"
+purviewConfiguration: {,…}
+version: "2018-06-01"
+tags: {catalogUri: "purviewdemo-uk.catalog.purview.azure.com"}
+catalogUri: "purviewdemo-uk.catalog.purview.azure.com"
+type: "Microsoft.DataFactory/factories"
+
+
+
